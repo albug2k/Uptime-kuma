@@ -9,6 +9,7 @@ pipeline{
     }
     stages {
         stage('Checkout from Git'){
+            //steps for the project
             steps{
                 git branch: 'main', url: 'https://github.com/albug2k/Uptime-kuma.git'
             }
